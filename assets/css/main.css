@@ -2379,3 +2379,68 @@ button i { font-size: 30px; padding-right: 5px; }
 .decoration{
 	
 }
+.call-to-us {
+	position: fixed;
+	display: block;
+	margin: 50px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	text-decoration: none;
+	animation: rotating 1.5s infinite;
+	background-color: #4bc2ce;
+	bottom: 0;
+	right: -29px;
+  }
+  .call-to-us:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	display: block;
+	border: 2px solid #4bc2ce;
+	border-radius: 50%;
+	animation: squeeze 2s infinite;
+  }
+  .call-to-us:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #4bc2ce
+	  url(https://cdn0.iconfinder.com/data/icons/windows8_icons/26/phone1.png)
+	  center no-repeat;
+	border-radius: 50%;
+  }
+  .call-to-us__label {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(121, 208, 0, 1);
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+	font-size: 12px;
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.5s ease;
+  }
+  .call-to-us:hover {
+	animation: none;
+  }
+  .call-to-us:hover .call-to-us__label {
+	opacity: 1;
+	z-index: 2;
+  }
+  .call-to-us:hover:before {
+	border-color: rgba(121, 208, 0, 1);
+  }
