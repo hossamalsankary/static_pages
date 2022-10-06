@@ -1172,7 +1172,7 @@ bar-4 { width: 42%; height: 18px; background-color: rgb(33, 150, 243); }
 button { color: rgb(255, 255, 255); background-color: rgb(46, 204, 113); border: none; border-radius: 6px; padding: 12px 20px; font-size: 20px; font-weight: 500; line-height: 22px; display: flex; align-items: center; box-shadow: rgb(154, 171, 237) 2px 7px 96px -2px; }
 button:hover { box-shadow: none; cursor: pointer; }
 button i { font-size: 30px; padding-right: 5px; }
-.heading { font-size: 25px; margin-right: 25px; }
+.heading {font-size: 25px;margin-right: 25px;}
 .fa { font-size: 25px; }
 .checked { color: orange; }
 .side { float: left; width: 11%; margin-top: 10px; }
@@ -1827,8 +1827,8 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
   .features article { width: 100%; margin: 0px 0px 2em !important; }
 }
 #header { transition: background-color 0.2s ease-in-out 0s; background-color: rgba(53, 56, 73, 0.95); height: 3.5em; left: 0px; line-height: 3.5em; padding: 0px 1.25em; position: fixed; top: 0px; width: 100%; z-index: 10000; }
-#header h1 { transition: opacity 0.2s ease-in-out 0s, visibility 0.2s ease 0s; border-bottom: 0px; font-size: 0.8em; margin-bottom: 0px; opacity: 1; visibility: visible; }
-#header h1 a { border: 0px; }
+#header h1 {transition: opacity 0.2s ease-in-out 0s, visibility 0.2s ease 0s;border-bottom: 0px;font-size: 1;margin-bottom: 0px;opacity: 1;visibility: visible;align-items: center;text-align: center;}
+#header h1 a {border: 0px;text-align: center;}
 #header nav { font-size: 0.8em; font-weight: 700; height: 3em; letter-spacing: 0.1em; line-height: 3em; position: absolute; right: 0.7em; text-transform: uppercase; top: 0.7em; }
 #header nav a { border: 0px; display: inline-block; padding: 0px 1em; }
 #header nav a::before { float: right; margin-left: 0.75em; }
@@ -2329,7 +2329,7 @@ form select option:not(:checked) { color: rgb(0, 0, 0); }
 section, article { margin-bottom: 3em; }
 section > :last-child, article > :last-child, section:last-child, article:last-child {margin-bottom: 0px;}
 .row > section, .row > article { margin-bottom: 0px; }
-.userRate { }
+.userRate {text-align: center;}
 .side { float: left; width: 11%; margin-top: 10px; }
 .side > div {font-size: 26px;}
 .middle { float: left; width: 69%; margin-top: 10px; }
@@ -2444,3 +2444,31 @@ button i { font-size: 30px; padding-right: 5px; }
   .call-to-us:hover:before {
 	border-color: rgba(121, 208, 0, 1);
   }
+  #footer {
+	position: relative;
+	margin: 0;
+	/* text-align: center; */
+	padding: 4em 0 8em 0;
+	/* box-shadow: inset 0 1px 0 0 #e6e6e6; */
+	}
+  
+  #footer .copyright {
+	margin-top: 3em;
+	font-size: 0.8em;
+	color: #aaa;
+  }
+  
+  #footer .copyright a {
+	color: inherit;
+  }
+  
+  #footer ul.icons a {
+	box-shadow: inset 0 0 0 1px #d6d6d6;
+  }
+  
+  .footercopy{
+	font-size: 1.2em;
+	/* margin: -9px 8px 26px 0; */
+	text-align: center;
+	background-color: rgb(53 56 73);
+	}
